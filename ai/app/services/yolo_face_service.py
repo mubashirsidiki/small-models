@@ -5,7 +5,7 @@ from typing import Dict
 from ultralytics import YOLO
 
 # Load YOLOv8 face detection model
-model = YOLO('app\services\yolov8n-face.pt')
+model = YOLO('app/services/yolov8n-face.pt')
 
 def detect_faces(image_bytes: bytes) -> Dict:
     # Decode image from bytes
