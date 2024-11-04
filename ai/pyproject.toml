@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "lite-models"
+version = "0.1.0"
+description = ""
+authors = ["mubashirsidiki <mubashirsidiki@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ultralytics = "^8.3.20"
+transformers = "^4.45.2"
+langchain-huggingface = "^0.1.0"
+langchain-core = "^0.3.12"
+sentencepiece = "^0.2.0"
+protobuf = "^5.28.2"
+fastapi = "^0.115.4"
+uvicorn = "^0.32.0"
+python-multipart = "^0.0.17"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
