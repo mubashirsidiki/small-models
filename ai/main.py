@@ -7,8 +7,8 @@ from app.routers import flant5_router, yolo_face_router
 app = FastAPI()
 
 # Include routers
-app.include_router(flant5_router.router, prefix="small-model/flant5", tags=["FLAN-T5"])
-app.include_router(yolo_face_router.router, prefix="small-model/yolo-face", tags=["YOLO Face Detection"])
+app.include_router(flant5_router.router, prefix="/small-model/flant5", tags=["FLAN-T5"])
+app.include_router(yolo_face_router.router, prefix="/small-model/yolo-face", tags=["YOLO Face Detection"])
 
 # Start Uvicorn server automatically when main.py is run
 if __name__ == "__main__":
